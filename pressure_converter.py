@@ -28,7 +28,7 @@ def pressure_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def pressure_conversion_interface(primary_color, secondary_color):
+def pressure_conversion_interface():
     st.title("Pressure Converter")
     st.subheader("Convert between different units of pressure")    
     value = st.number_input("Enter pressure value")

@@ -9,7 +9,7 @@ def currency_converter(value, from_currency, to_currency):
     else:
         return "Invalid currency"
 
-def currency_conversion_interface(primary_color, secondary_color):
+def currency_conversion_interface():
     st.title("Currency Converter")
     st.subheader("Convert between different currencies")
     

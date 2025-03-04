@@ -28,7 +28,7 @@ def frequency_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def frequency_conversion_interface(primary_color, secondary_color):
+def frequency_conversion_interface():
     st.title("Frequency Converter")
     st.subheader("Convert between different units of frequency")
     

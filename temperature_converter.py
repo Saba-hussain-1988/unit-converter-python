@@ -16,7 +16,7 @@ def temperature_converter(value, from_unit, to_unit):
         return (value - 273.15) * 9/5 + 32
     else:
         return "Invalid units"
-def temperature_conversion_interface(primary_color, secondary_color):
+def temperature_conversion_interface():
     st.title("Temperature Converter")
     st.subheader("Convert between different units of temperature")
     

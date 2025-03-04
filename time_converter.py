@@ -29,7 +29,7 @@ def time_converter(value, from_unit, to_unit):
         return "Invalid units"
 
 
-def time_conversion_interface(primary_color, secondary_color):
+def time_conversion_interface():
     st.title("Time Converter")
     st.subheader("Convert between different units of time")
     

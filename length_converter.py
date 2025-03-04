@@ -44,7 +44,7 @@ def length_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def length_conversion_interface(primary_color, secondary_color):
+def length_conversion_interface():
     st.title("Length Converter")
     st.subheader("Convert between different units of length")
     

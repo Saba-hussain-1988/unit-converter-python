@@ -44,7 +44,7 @@ def area_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def area_conversion_interface(primary_color, secondary_color):
+def area_conversion_interface():
     st.title("Area Converter")
     st.subheader("Convert between different units of area")
     

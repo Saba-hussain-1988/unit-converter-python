@@ -29,7 +29,7 @@ def mass_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def mass_conversion_interface(primary_color, secondary_color):
+def mass_conversion_interface():
     st.title("Mass Converter")
     st.subheader("Convert between different units of mass")
     

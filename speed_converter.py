@@ -16,7 +16,7 @@ def speed_converter(value, from_unit, to_unit):
     else:
         return "Invalid units"
 
-def speed_conversion_interface(primary_color, secondary_color):
+def speed_conversion_interface():
     st.title("Speed Converter")
     st.subheader("Convert between different units of speed")
     

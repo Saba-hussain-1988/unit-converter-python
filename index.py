@@ -89,25 +89,25 @@ st.sidebar.title("Unit Converter")
 category = st.sidebar.selectbox("Select Category", ["Length", "Mass", "Volume", "Temperature", "Energy", "Currency", "Area", "Frequency", "Pressure", "Speed", "Time"])
 
 if category == "Length":
-    length_conversion_interface(primary_color, secondary_color)
+    length_conversion_interface()
 elif category == "Mass":
-    mass_conversion_interface(primary_color, secondary_color)
+    mass_conversion_interface()
 elif category == "Volume":
-    volume_conversion_interface(primary_color, secondary_color)
+    volume_conversion_interface()
 elif category == "Temperature":
-    temperature_conversion_interface(primary_color, secondary_color)
+    temperature_conversion_interface()
 elif category == "Energy":
-    energy_conversion_interface(primary_color, secondary_color)
+    energy_conversion_interface()
 elif category == "Currency":
-    currency_conversion_interface(primary_color, secondary_color)
+    currency_conversion_interface()
 elif category == "Area":
-    area_conversion_interface(primary_color, secondary_color)
+    area_conversion_interface()
 elif category == "Frequency":
-    frequency_conversion_interface(primary_color, secondary_color)
+    frequency_conversion_interface()
 elif category == "Pressure":
-    pressure_conversion_interface(primary_color, secondary_color)
+    pressure_conversion_interface()
 elif category == "Speed":
-    speed_conversion_interface(primary_color, secondary_color)
+    speed_conversion_interface()
 elif category == "Time":
-    time_conversion_interface(primary_color, secondary_color)
+    time_conversion_interface()
 
