@@ -12,78 +12,70 @@ from pressure_converter import pressure_conversion_interface
 from speed_converter import speed_conversion_interface
 from time_converter import time_conversion_interface
 
-
-# # Theme Settings
-# st.sidebar.title("Theme Settings")
-# theme = st.sidebar.selectbox("Select Theme", ["Light", "Dark"])
-# if theme == "Dark":
-#     st.set_page_config(page_title="Unit Converter", layout="wide", theme="dark")
-# else:
-#     st.set_page_config(page_title="Unit Converter", layout="wide")
-
-# Color Settings
-st.sidebar.title("Color Settings")
-color = st.sidebar.selectbox("Select Color", ["Green", "Blue", "Red"])
-if color == "Green":
-    primary_color = "#f0fff0"
-    secondary_color = "green"
-    st.markdown(
-        """
-        <style>
-            .stApp {
-                background-color: #f0fff0;
-            }
-            .stApp h1 {
-                color: green !important; /* Green Title */
-            }
-            .sidebar .sidebar-content {
-                background-color: #799a6fc5;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-elif color == "Blue":
-    primary_color = "#d8f5fa"
-    secondary_color = "#6771fe"
-    st.markdown(
-        """
-        <style>
-            .stApp {
-                background-color: #d8f5fa;
-            }
-            .stApp h1 {
-                color: blue !important; /* Green Title */
-            }
-            .sidebar .sidebar-content {
-                background-color: #7f83b0c5;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-elif color == "Red":
-    primary_color = "#f4dede"
-    secondary_color = "#b12d2d"
-    st.markdown(
-        """
-        <style>
-            .stApp {
-                background-color: #f4dede;
-            }
-            .stApp h1 {
-                color: #b12d2d !important; /* Green Title */
-            }
-            div[data-testid="stSidebar"] {
-                background-color: #a27a7a;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
 @track()
 def main():
+    # Color Settings
+    st.sidebar.title("Color Settings")
+    color = st.sidebar.selectbox("Select Color", ["Green", "Blue", "Red"])
+    if color == "Green":
+        primary_color = "#f0fff0"
+        secondary_color = "green"
+        st.markdown(
+            """
+            <style>
+                .stApp {
+                    background-color: #f0fff0;
+                }
+                .stApp h1 {
+                    color: green !important; /* Green Title */
+                }
+                .sidebar .sidebar-content {
+                    background-color: #799a6fc5;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif color == "Blue":
+        primary_color = "#d8f5fa"
+        secondary_color = "#6771fe"
+        st.markdown(
+            """
+            <style>
+                .stApp {
+                    background-color: #d8f5fa;
+                }
+                .stApp h1 {
+                    color: blue !important; /* Green Title */
+                }
+                .sidebar .sidebar-content {
+                    background-color: #7f83b0c5;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    elif color == "Red":
+        primary_color = "#f4dede"
+        secondary_color = "#b12d2d"
+        st.markdown(
+            """
+            <style>
+                .stApp {
+                    background-color: #f4dede;
+                }
+                .stApp h1 {
+                    color: #b12d2d !important; /* Green Title */
+                }
+                div[data-testid="stSidebar"] {
+                    background-color: #a27a7a;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
+    
+
     # Main Page
     st.title("Unit Converter by S.R.Chohan")
     st.subheader("A comprehensive unit conversion tool")
